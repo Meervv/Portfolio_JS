@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style_projet.css"/>
+</head>
+<body>
+
+    <!-- menu responsive -->
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fa-solid fa-rocket"></i>
+            </div>
+            <div class="toggle">
+                <i class="fa-solid fa-bars ouvrir"></i>
+                <i class="fa-solid fa-circle-xmark fermer"></i>
+            </div>
+            <ul class="menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="certifs.html">Certifications</a></li>
+                <li><a href="veilles.html">Veilles technologiques</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br><br><br><br>
+
+    <!-- cards -->
+    <div class="container">
+        <div class="card">
+            <div class="content">
+                <h2>01</h2>
+                <h3>AP_COMELEON</h3>
+                <br>
+                <p>Dans une équipe de trois personnes, nous devions réaliser un site vitrine pour un photographe 
+                    fictif. Les stacks :
+                    <li>Symfony 5 (PHP)</li>
+                    <li>Twig</li>
+                    <li>MySQL</li>
+                </p>
+                <a href="https://github.com/YohannDR/AP1Comeleon">Voir plus</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <h2>02</h2>
+                <h3>AP_TKT</h3>
+                <br>
+                <p>Dans une équipe de trois personnes, nous devions réaliser une application cross-plateforme en 
+                    utilisant le Framework Ionic Angular, et la mise en place d'une API-REST avec NodeJS.
+                </p>
+                <a href="https://github.com/TristanCarnesciali/AP4_TKT_ionic">Voir plus</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <h2>03</h2>
+                <h3>appli_JeuxVideo</h3>
+                <br>
+                <p>Projet personnel de création d'une API-REST qui permet, à l'aide de NodeJS, de créer, modifier ou
+                    supprimer les jeux vidéos, connectés à une base de donnée MySQL.
+                </p>
+                <a href="https://github.com/Meervv/appli_jeuxvideo/tree/main/appli_jeuxvideo">Voir plus</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <h2>04</h2>
+                <h3>AP_SUISS_VISITE</h3>
+                <br>
+                <p>Dans une équipe de trois, et en tant que chef de projet, nous devions créer une application 
+                    dédiée au suivi des étapes de validation de mise en marché d'un médicament, 
+                    pour le laboratoire fictif GSB</p>
+                <a href="https://github.com/Meervv/AP3_Suiss_Visite">Voir plus</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- script JS -->
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".card"), {
+		max: 25,
+		speed: 400
+	});
+    </script>
+    <script src="app.js"></script>
+</body>
+</html>

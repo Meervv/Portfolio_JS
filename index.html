@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fa-solid fa-rocket"></i>
+            </div>
+            <div class="toggle">
+                <i class="fa-solid fa-bars ouvrir"></i>
+                <i class="fa-solid fa-circle-xmark fermer"></i>
+            </div>
+            <ul class="menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="certifs.html">Certifications</a></li>
+                <li><a href="veilles.html">Veilles technologiques</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- personal info -->
+    <div class="perso">
+        <p class="para1">Salut à toi ! Je suis Marvine, j'ai 23 ans et je suis étudiant en BTS SIO option SLAM, en deuxième année. 
+            Je suis inscrit à l'école ENSITECH à Cergy en alternance pour préparer mon Bachelor de développeur
+            Full-stack.
+        </p>
+        <p class="para2">Ici, vous trouverez mes projets, mes veilles technologiques et mes certifications de mes deux années de
+            BTS.
+        </p>
+    </div>
+
+    <!-- CV -->
+    <div class="cv">
+        <iframe class="pdf" src="img/CV.pdf" width="450" height="600"></iframe>
+    </div>
+    
+    <!-- clock -->
+    <div class="container">
+        <div class="clock">
+
+            <div class="circle" id="sc" style="--clr: #04fc43;"><i></i></div>
+            <div class="circle circle2" id="mn" style="--clr: #fee800;"><i></i></div>
+            <div class="circle circle3" id="hr" style="--clr: #ff2972;"><i></i></div>
+
+            <span style="--i:1;"><b>1</b></span>
+            <span style="--i:2;"><b>2</b></span>
+            <span style="--i:3;"><b>3</b></span>
+            <span style="--i:4;"><b>4</b></span>
+            <span style="--i:5;"><b>5</b></span>
+            <span style="--i:6;"><b>6</b></span>
+            <span style="--i:7;"><b>7</b></span>
+            <span style="--i:8;"><b>8</b></span>
+            <span style="--i:9;"><b>9</b></span>
+            <span style="--i:10;"><b>10</b></span>
+            <span style="--i:11;"><b>11</b></span>
+            <span style="--i:12;"><b>12</b></span>
+        </div>
+
+        <!-- digital clock -->
+        <div id="time">
+            <div id="hours" style="--clr:#ff2972;">00</div>
+            <div id="minutes" style="--clr:#fee800;">00</div>
+            <div id="seconds" style="--clr:#04fc43;">00</div>
+            <div id="ampm">AM</div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
