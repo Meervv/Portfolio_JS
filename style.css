@@ -13,18 +13,19 @@ html {
   font-size: 16px;
 }
 
-body {
+/* body {
   font-family: sans-serif;
   background-color: #000;
-}
+} */
 
 header {
   position: absolute;
+  z-index: 10;
   width: 100%;
   height: 8vh;
   top: 0;
   left: 0;
-  background-color: #000;
+  background-color: #000000;
   color: #fff;
   padding: 0 2rem;
 }
@@ -118,13 +119,15 @@ nav {
 /* CV style*/
 .cv .pdf{
   margin-left: -50%;
-  margin-top: 20%;
+  
 }
 
 /* personal info style */
 .perso {
   color: #fff;
   margin-left: 30px;
+  position: relative;
+  z-index: 1;
 }
 
 .perso .para1 {
@@ -146,6 +149,28 @@ body {
   align-items: center;
   min-height: 100vh;
   background: #000;
+}
+
+body::before {
+  content:'';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#f00, #f0f);
+  clip-path: circle(30% at right);
+}
+
+body::after {
+  content:'';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#2196f3, #e91e63);
+  clip-path: circle(20% at 10% 10%);
 }
 
 .container {
